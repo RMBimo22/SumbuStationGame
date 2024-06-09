@@ -1,7 +1,9 @@
-<html lang="en"><head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>kontak kami</title>
+  <title>Kontak Kami</title>
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="CSS/style.css">
 </head>
@@ -43,21 +45,24 @@
         <p class="text-center">
           <a href="https://www.instagram.com/sumbustationgame/">@sumbustationgame</a>
         </p>
-        <div class="row pb-3">
-          <div class="col-md-6">
-            <input class="form-control form-control-lg mb-3" type="text" placeholder="Nama">
-            <input class="form-control form-control-lg mb-3" type="text" placeholder="Email">
-            <input class="form-control form-control-lg" type="text" placeholder="No. Phone">
+        <form action="https://formspree.io/f/mayrrwde" method="POST">
+          <div class="row pb-3">
+            <div class="col-md-6">
+              <input class="form-control form-control-lg mb-3" type="text" name="name" placeholder="Nama" required>
+              <input class="form-control form-control-lg mb-3" type="email" name="email" placeholder="Email" required>
+              <input class="form-control form-control-lg" type="text" name="phone" placeholder="No. Phone" required>
+            </div>
+            <div class="col-md-6">
+              <textarea class="form-control form-control-lg" name="message" rows="5" placeholder="Pesan" required></textarea>
+            </div>
           </div>
-          <div class="col-md-6">
-            <textarea class="form-control form-control-lg" rows="5"></textarea>
+          <div class="col-md-3 mx-auto text-center">
+            <button type="submit" class="btn btn-danger btn-lg">
+              Kirim Pesan
+            </button>
           </div>
-        </div>
-        <div class="col-md-3 mx-auto text-center">
-          <button type="button" class="btn btn-danger btn-lg">
-            Kirim Pesan
-          </button>
-        </div>
+          <input type="hidden" name="_subject" value="New submission from Sumbu Stationgame">
+        </form>
       </div>
     </div>
   </div>
@@ -70,5 +75,6 @@
   </div>
 </footer>
 
-        <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
-</body></html>
+<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
