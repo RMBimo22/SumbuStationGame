@@ -8,73 +8,74 @@
   <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>    
+  <div class="sumbu-content">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Sumbu<strong> Stationgame</strong></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse text-right" id="navbarText">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="layanan.html">Game</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="layanan2.html">Software</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="kontakkami.html">Kontak kami</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">Sumbu<strong> Stationgame</strong></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse text-right" id="navbarText">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Beranda</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="layanan.html">Game</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="layanan2.html">Software</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="kontakkami.html">Kontak kami</a>
-          </li>
-        </ul>
+    <div class="container-fluid sumbu-banner2 sumbu-main">
+      <div class="container text-center">
+        <h4 class="display-6 text-white">SILAHKAN KIRIM PESAN</h4>
+        <h3 class="display-1 text-white">Sumbu Stationgame</h3>
+
+        <div class="container-fluid pt-5 pb-5 sumbu-kontak text-color-blu">
+          <div class="container">
+            <h3 class="display-3 text-white">Kontak Kami</h3>
+            <p class="text-center">
+              <a href="https://www.instagram.com/sumbustationgame/" text-shadow 5px 5px 8px>@sumbustationgame</a>
+            </p>
+            <form action="https://formspree.io/f/mayrrwde" method="POST">
+              <div class="row pb-3">
+                <div class="col-md-6">
+                  <input class="form-control form-control-lg mb-3" type="text" name="name" placeholder="Nama" required>
+                  <input class="form-control form-control-lg mb-3" type="email" name="email" placeholder="Email" required>
+                  <input class="form-control form-control-lg mb-3" type="text" name="phone" placeholder="No. Phone" required>
+                </div>
+                <div class="col-md-6">
+                  <textarea class="form-control form-control-lg" name="message" rows="5" placeholder="Pesan" required></textarea>
+                </div>
+              </div>
+              <div class="col-md-3 mx-auto text-center">
+                <button type="submit" class="btn btn-danger btn-lg">
+                  Kirim Pesan
+                </button>
+              </div>
+              <input type="hidden" name="_subject" value="New submission from Sumbu Stationgame">
+            </form>
+          </div>
+        </div>
       </div>
     </div>
-  </nav>
 
-  <div class="container-fluid banner2">
-  <div class="container text-center">
-    <h4 class="display-6">SILAHKAN KIRIM PESAN</h4>
-    <h3 class="display-1">Sumbu Stationgame</h3>
-    
-    <div class="container-fluid pt-5 pb-5 kontak text-color-blu">
+    <!-- Footer -->
+    <footer class="sumbu-footer">
       <div class="container">
-        <h3 class="display-3">Kontak Kami</h3>
-        <p class="text-center">
-          <a href="https://www.instagram.com/sumbustationgame/">@sumbustationgame</a>
-        </p>
-        <form action="https://formspree.io/f/mayrrwde" method="POST">
-          <div class="row pb-3">
-            <div class="col-md-6">
-              <input class="form-control form-control-lg mb-3" type="text" name="name" placeholder="Nama" required>
-              <input class="form-control form-control-lg mb-3" type="email" name="email" placeholder="Email" required>
-              <input class="form-control form-control-lg mb-3" type="text" name="phone" placeholder="No. Phone" required>
-            </div>
-            <div class="col-md-6">
-              <textarea class="form-control form-control-lg" name="message" rows="5" placeholder="Pesan" required></textarea>
-            </div>
-          </div>
-          <div class="col-md-3 mx-auto text-center">
-            <button type="submit" class="btn btn-danger btn-lg">
-              Kirim Pesan
-            </button>
-          </div>
-          <input type="hidden" name="_subject" value="New submission from Sumbu Stationgame">
-        </form>
+        <p>&copy; copyright 2024 By Bims.</p>
       </div>
-    </div>
+    </footer>
   </div>
-</div>
 
-<!-- Footer -->
-<footer style="background-color: #343a40; color: white; padding: 10px 0; text-align: center;">
-  <div class="container">
-    <p>&copy; copyrigt 2024 By Bims.</p>
-  </div>
-</footer>
-
-<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
